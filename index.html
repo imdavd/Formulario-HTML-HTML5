@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+
+    <body bgcolor="#f7f4e8">
+        <br><br>
+        <table align="center" widht="150"> 
+           <tr> 
+            <td> 
+                <fieldset align="center">
+
+                    <legend align="center"> 🔎 CADASTRO </legend>
+                    <form action="enviar.php" method="get" name="cadastro">
+                        <table border="0" width="0" cellspacing="15">
+                            
+                            <h2 align="center"> <font color="purple" size="5px" face="Freestyle script"> Informações de usuário </font> </h2>
+                            <h5 align="center"> <font size="1px" face="Arial"> Faça a reserva do seu veículo <br> 
+                                solicitamos que preencha todos os campos! </font> </h5>
+                                <tr>
+                                    <td> <label for="nome"> Nome: </label> </td>
+                                    <td> <input type="text" id="nome" name="nome" size="" maxlength="40" required=""
+                                            placeholder="Digite seu nome"> </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td> <label for="nome"> CPF: </label> </td>
+                                    <td> <input type="text" id="nome" name="nome" size="" maxlength="50" required=""
+                                            placeholder="Digite seu CPF"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label for="nome"> Telefone: </label> </td>
+                                    <td> <input type="text" id="nome" name="nome" size="" maxlength="40" required=""
+                                            placeholder="Digite seu telefone"> </td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label for="nome"> E-mail: </label> </td>
+                                    <td> <input type="email" id="email" name="email" size="" maxlength="40" required=""
+                                            placeholder="Digite seu e-mail"> </td>
+                                </tr>
+
+                                <br/><br>
+                        </fieldset>
+                    </table>
+                                <fieldset align="center">
+                                    <legend align="center"> 🔎 DADOS DO VEÍCULO </legend>
+                                    <form action="enviar.php" method="get" name="cadastro">
+                                    <table border="0" width="0" cellspacing="15">
+
+                                <h2 align="center"> <font color="purple" size="5px" face="Freestyle script"> Escolha sua opção </font> </h2>
+                                <h5 align="center"> <font size="1px" face="Arial"> Faça a reserva do seu veículo <br> 
+                                solicitamos que preencha todos os campos! </font> </h5>
+
+                                <tr>
+                                    <td> <label for="nome"> Cor: </label>
+                                    <input type="text" id="nome" name="nome" size="" maxlength="40" required=""
+                                            placeholder="Digite a cor do veículo"> </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td> <label> Marca:  </label>
+                                        <select id="marca" name="marca" required="required" pattern=".{3,}"
+                                            title="Dica: preencher como descrito no documento do veículo.">
+                                            <option value="" selected="selected"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --- Selecione--- 
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                            <option>Caoa Chery</option>
+                                            <option>Hyundai</option>
+                                            <option>Mercedes Benz</option>
+                                            <option>Fiat</option>
+                                            <option>Renault</option>
+                                            <option>Alfa Romeo</option>
+                                            <option>Land Rover</option>
+                                            <option>Volkswagen</option>
+                                            <option>Chevrolet</option>
+                                            <option>Ford</option>
+                                            <option>Opel</option>
+                                            <option>Toyota</option>
+                                    </td>
+                                </tr>
+                                 
+                                <tr>
+                                    <td> <label for="nome"> Ano: </label>
+                                    <input type="text" id="nome" name="nome" size="auto" maxlength="40" required=""
+                                           &nbsp; placeholder="Digite o ano do carro"> </td>
+                                </tr>
+
+                                <tr> 
+                                    <td> <label for="nome"> Placa: </label>
+                                    <input  type="text" id="placa" name="placa" required="required"
+                                                pattern="[a-z|A-Z]{3}[0-9][a-z|A-Z|0-9][0-9]{2}"
+                                                title="Dica: 3 letras e 4 números (ex: LOE0011) OU placa MERCOSUL (ex: ABC0Y01)." 
+                                                placeholder="Digite a placa do carro"> </td>
+                                </tr>
+
+                                <tr>
+                                   <td> <label> DOCUMENTO DE IDENTIFICAÇÃO </label> </td>
+                                </tr>
+                                <tr> 
+                                    <td> <label> 
+                                        <font size="1px" face="Arial"> (RG, CPF, CNH VÁLIDA, CRLV - DOCUMENTO DO CARRO) </font> </h5> </label> </td>
+                                </tr>
+                                <tr> 
+                                    <td> </select>
+                                    <input type="file" id="anexo" name="anexo" required=""/> </td>
+                                </tr>
+                                <tr> 
+                                    <td> <label> <input type="checkbox" id="rock" size="30" required=""/>
+                                    Eu aceito os <a href="https://www.localiza.com/brasil/pt-br/reserva/termos-e-condicoes"> Termos de Serviço </a></label> </td>
+                                </tr>
+                                <tr> 
+                                    <th colspan="2">
+                                        <input type="submit" id="enviar" name="enviar" value="Enviar" />
+                                        <input type="reset" id="limpar" name="limpar" value="Limpar" />
+                                    <td> <buttom type="sumit" id="send" name="send"> </td>
+                                    <tr>
+                                    <td> <img src="img/send.png" width="17" height="17"/> </td>
+                                    </tr>
+                                </buttom>
+                            </tr>
+                           </tr>
+                </fieldset>
+        </body>
+</html>
